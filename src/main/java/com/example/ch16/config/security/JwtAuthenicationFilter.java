@@ -1,13 +1,14 @@
 package com.example.ch16.config.security;
 
-import java.io.IOException;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.web.filter.OncePerRequestFilter;
+
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.web.filter.OncePerRequestFilter; //객체상속개체를 사용
+import java.io.IOException;
 
 public class JwtAuthenicationFilter extends OncePerRequestFilter {  //클라이언트 -> 필터역할 -> DispatcherServlet
 //JwtTokenProvider: 상속받으면 구현해야할 메서드

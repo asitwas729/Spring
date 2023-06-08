@@ -7,10 +7,11 @@ import com.example.ch16.dto.SignUpResultDto;
 import com.example.ch16.entity.User;
 import com.example.ch16.repository.UserRepository;
 import com.example.ch16.service.SignService;
-import java.util.Collections;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+
+import java.util.Collections;
 
 @Service
 public class SignServiceImpl implements SignService {

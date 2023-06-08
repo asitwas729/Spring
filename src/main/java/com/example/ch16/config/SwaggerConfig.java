@@ -1,8 +1,6 @@
 package com.example.ch16.config;
 
 
-import static org.springframework.security.config.Elements.JWT;
-
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
@@ -14,6 +12,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+
+import static org.springframework.security.config.Elements.JWT;
 
 @Configuration
 @EnableGlobalMethodSecurity(
